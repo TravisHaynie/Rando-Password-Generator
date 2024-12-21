@@ -10,9 +10,10 @@
             <h1 class="head"><span class="span">Generate a</span> random password</h1>
             <p class="paragraph">Never use an insecure password again</p>
         <div>
-            <button class="button" id="button-el" onclick="generatePassword()">Generate Password</button>
-            <label class="label">Password Length:</label>
-            <input class= "input" title="password Length" placeholder="password length"></input>
+            <button class="button" id="button-el" onclick="generateRandomPassword()">Generate Password</button>
+            <label class="label"></label>
+            <input class= "input" id="password-length"title="password Length" placeholder="password length"></input>
+            <button onclick="setPasswordLength()">Submit</button>
         </div>
         <div class="line"></div>
         </div>
