@@ -9,11 +9,15 @@
         <div class="flex">
             <h1 class="head"><span class="span">Generate a</span> random password</h1>
             <p class="paragraph">Never use an insecure password again</p>
-            <button class="button">Generate Password</button>
-            <div class="line"></div>
-       </div>
-            <div class="container-1"></div>
-            <div class="container-2"></div>
-        <script href="js/scripts.js"></script>
+        <div>
+            <button class="button" id="button-el" onclick="generatePassword()">Generate Password</button>
+            <label class="label">Password Length:</label>
+            <input class= "input" title="password Length" placeholder="password length"></input>
+        </div>
+        <div class="line"></div>
+        </div>
+        <div class="container-1" id="container-el1"></div>
+        <div class="container-2" id="container-el2"></div>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
