@@ -4,52 +4,36 @@ let characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M
     "/"];
 let passwordLength = 15;
 let passwordLengthEl = document.getElementById("password-length").value;
-let lengthEl = JSON.stringify(passwordLengthEl)
-console.log(passwordLengthEl)
-localStorage.setItem("password", lengthEl)
-console.log(lengthEl)
-localStorage.getItem(lengthEl)
+
 
 function generateRandomPassword() {
+    passwordLengthEl = document.getElementById("password-length").value;
+    passwordLength = 15
 
+    containerEl1.textContent = randonPassword();
+    containerEl2.textContent = randonPassword();
 
-
-    // if (passwordLengthEl >= 1 && passwordLengthEl <= 15) {
-    //     console.log(passwordLengthEl)
+    if (passwordLengthEl >= 1 && passwordLengthEl <= 23) {
+        passwordLength = passwordLengthEl
         containerEl1.textContent = randonPassword();
         containerEl2.textContent = randonPassword();
-
-    // } else if (passwordLengthEl > 15 ) {
-       
-    // }
+    } else {
+        containerEl1.textContent = randonPassword();
+        containerEl2.textContent = randonPassword();
+    }
 
 }
 
 function randonPassword() {
     let password = "";
+    
     for (let i = 0; i < passwordLength; i++) {
         const randonPassword = Math.floor(Math.random() * characters.length)
         password += characters[randonPassword]
-
     }
     return password
 
 }
 
-function setPasswordLength() {
-    let passwordLengthEl = document.getElementById("password-length").value;
-    let lengthEl = JSON.stringify(passwordLengthEl)
-    console.log(passwordLengthEl)
-    localStorage.setItem("password", lengthEl)
-    console.log(lengthEl)
-    localStorage.getItem(lengthEl)
-  
-    if (passwordLengthEl >= 1 && passwordLengthEl <= 15) {
-        passwordLength = 15
 
-    } else if (passwordLengthEl > 15 ) {
-        passwordLength = 4
-    }
-
-}
 
