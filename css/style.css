@@ -2,11 +2,13 @@ body {
     background-color: #1F2937;
 }
 
-.flex {
+.flex-column {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
+
+.flex-row {}
 
 .head {
     display: flex;
@@ -51,6 +53,16 @@ body {
     background-color: #10B981;
 }
 
+.toggle-btn {
+    width: 196px;
+    height: 42px;
+    margin-left: 52px;
+    border-radius: 6px;
+    padding: 9px 17px 9px 15px;
+    background-color: #10B981;
+}
+
+
 .line {
     border: 2px solid #2F3E53;
     width: 446px;
@@ -64,12 +76,13 @@ body {
     height: 28px;
     background-color: #273549;
     display: inline-block;
-    margin-left: 52px;
+    margin-left: 32px;
     margin-top: 50px;
     border-radius: 6px;
     color: #10B981;
     text-align: center;
-    padding-top:7px;
+    padding-top: 7px;
+
 }
 
 .container-2 {
@@ -80,7 +93,7 @@ body {
     border-radius: 6px;
     color: #10B981;
     text-align: center;
-    padding-top:7px;
+    padding-top: 7px;
 }
 
 .input {

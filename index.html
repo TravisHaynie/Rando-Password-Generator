@@ -6,20 +6,19 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="flex">
+        <div class="flex-column">
             <h1 class="head"><span class="span">Generate a</span> random password</h1>
             <p class="paragraph">Never use an insecure password again</p>
         <div>
             <button class="button" id="button-el" onclick="generateRandomPassword()">Generate Password</button>
             <label class="label"></label>
             <input class= "input" id="password-length"title="password Length" placeholder="password length" ></input>
-        
         </div>
         <div class="line"></div>
         </div>
-        <button onclick="toggleBetweenNumbersOrSymbols()">Toggle</button>
-        <div class="container-1" id="container-el1"></div>
-        <div class="container-2" id="container-el2"></div>
+        <button class="toggle-btn" onclick="toggleBetweenNumbersOrSymbols()">Toggle</button>
+        <div class="container-1" id="container-el1" onclick="copyContainerOne()">password</div>
+        <div class="container-2" id="container-el2" onclick="copyContainerTwo()">password</div>
         <script src="js/scripts.js"></script>
     </body>
 </html>
