@@ -37,8 +37,8 @@ function randomPassword() {
     let password = "";
 
     for (let i = 0; i < passwordLength; i++) {
-        const randonPassword = Math.floor(Math.random() * characters.length)
-        password += characters[randonPassword]
+        const randomPassword = Math.floor(Math.random() * characters.length)
+        password += characters[randomPassword]
     }
     return password
 
@@ -48,8 +48,8 @@ function randomNumberPassword() {
     let password = "";
 
     for (let i = 0; i < passwordLength; i++) {
-        const randonPassword = Math.floor(Math.random() * 10)
-        password += randonPassword
+        const randomPassword = Math.floor(Math.random() * 10)
+        password += randomPassword
     }
     return password
 }
