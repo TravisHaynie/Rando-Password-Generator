@@ -51,6 +51,7 @@ body {
     padding: 9px 17px 9px 15px;
     gap: 12px;
     background-color: #10B981;
+    border: none;
 }
 
 .toggle-btn {
@@ -60,6 +61,7 @@ body {
     border-radius: 6px;
     padding: 9px 17px 9px 15px;
     background-color: #10B981;
+    border: none;
 }
 
 
@@ -105,6 +107,7 @@ body {
     padding: 9px 10px 9px 10px;
     gap: 12px;
     background-color: #10B981;
+    border: none;
 }
 
 .label {
